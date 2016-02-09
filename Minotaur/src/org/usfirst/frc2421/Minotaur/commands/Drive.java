@@ -22,8 +22,7 @@ import org.usfirst.frc2421.Minotaur.subsystems.Motors;
  *
  */
 public class Drive extends Command {
-	public static OI oi = new OI();
-	Joystick stick = oi.stick;
+	Joystick stick = Robot.oi.stick;
 	Motors motors = new Motors();
 	double deadzone;
 	double x;
