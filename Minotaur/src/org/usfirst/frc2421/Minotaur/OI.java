@@ -64,8 +64,11 @@ public class OI {
         JoystickButton ballExport = new JoystickButton(stick, 1);
         JoystickButton ballInput = new JoystickButton(stick, 2);
         JoystickButton solReverse = new JoystickButton(stick, 4);
+        solReverse.whenPressed(new SolenoidIn());
         JoystickButton solOff = new JoystickButton(stick, 3);
+        solOff.whenPressed(new SolenoidOut());
         JoystickButton solForward = new JoystickButton(stick, 5);
+        solForward.whenPressed(new SolenoidOut());
         // SmartDashboard Buttons
         SmartDashboard.putData("Autonomous Command", new AutonomousCommand());
         SmartDashboard.putData("Drive", new Drive());
