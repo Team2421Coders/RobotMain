@@ -18,11 +18,15 @@ import org.usfirst.frc2421.Minotaur.OI;
 import org.usfirst.frc2421.Minotaur.Robot;
 import org.usfirst.frc2421.Minotaur.subsystems.Motors;
 
-/**
- *
+/**Controls drive by executing continuously
+ * Loops here instead of in teleop periodic
+ * 
+ * Kinda sorta-
+ * X axis of joystick controls power - forward or reverse
+ * Y axis of joystick controls turn angle - modifies power of the left and right sides
  */
 public class Drive extends Command {
-	Joystick stick = Robot.oi.stick;
+	Joystick stick = Robot.oi.stickDrive;
 	Motors motors = Robot.motors;
 	double deadzone;
 	double x;

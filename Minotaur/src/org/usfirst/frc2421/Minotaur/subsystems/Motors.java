@@ -19,8 +19,8 @@ import edu.wpi.first.wpilibj.SpeedController;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 
-/**
- *
+/**Drive subsystem
+ * Includes commands for changing the speeds of the left and right side motors together
  */
 public class Motors extends Subsystem {
 

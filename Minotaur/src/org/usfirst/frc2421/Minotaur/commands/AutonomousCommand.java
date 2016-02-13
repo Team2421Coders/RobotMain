@@ -14,8 +14,15 @@ package org.usfirst.frc2421.Minotaur.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc2421.Minotaur.Robot;
 
-/**
- *
+/**Robot does things on its own - no human control
+ * Currently nothing implemented
+ * 
+ * Ideas:
+ * -Move forward up to a defense
+ * -Move through a defense
+ * -Pick up a ball
+ * -Take ball through a defense
+ * -Put ball into the low goal
  */
 public class AutonomousCommand extends Command {
 

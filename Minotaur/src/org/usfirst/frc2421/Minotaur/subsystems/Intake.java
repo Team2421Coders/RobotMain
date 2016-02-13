@@ -19,7 +19,7 @@ import edu.wpi.first.wpilibj.SpeedController;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 
-/**
+/**Controls ball intake
  *
  */
 public class Intake extends Subsystem {

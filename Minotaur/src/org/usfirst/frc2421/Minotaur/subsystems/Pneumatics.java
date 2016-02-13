@@ -18,7 +18,7 @@ import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 
-/**
+/**Pneumatics subsystem
  *
  */
 public class Pneumatics extends Subsystem {
