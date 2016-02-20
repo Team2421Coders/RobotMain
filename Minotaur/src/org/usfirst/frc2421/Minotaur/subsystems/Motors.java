@@ -51,12 +51,12 @@ public class Motors extends Subsystem {
         // setDefaultCommand(new MySpecialCommand());
     }
     public static void setLeft(double x){
-    	leftMotor1.set(-x*speedMult);
-    	leftMotor2.set(-x*speedMult);
+    	leftMotor1.set(x*speedMult);
+    	leftMotor2.set(x*speedMult);
     }
     public static void setRight(double x){
-    	rightMotor1.set(x*speedMult);
-    	rightMotor2.set(x*speedMult);
+    	rightMotor1.set(-x*speedMult);
+    	rightMotor2.set(-x*speedMult);
     }
 }
 
