@@ -17,7 +17,7 @@ import edu.wpi.first.wpilibj.command.Command;
 
 import org.usfirst.frc2421.Minotaur.OI;
 import org.usfirst.frc2421.Minotaur.Robot;
-import org.usfirst.frc2421.Minotaur.subsystems.Motors;
+import org.usfirst.frc2421.Minotaur.subsystems.Pneumatics;
 
 /**Command for pulling the pneumatics lift piston in
  * Runs when pressed - always fully retracts
@@ -48,9 +48,9 @@ public class SolenoidToggle extends Command {
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	if(direction)
-    		Robot.pneumatics.doubleSolenoid1.set(DoubleSolenoid.Value.kForward);
+    		Pneumatics.doubleSolenoid1.set(DoubleSolenoid.Value.kForward);
     	else if(!direction)
-    		Robot.pneumatics.doubleSolenoid1.set(DoubleSolenoid.Value.kReverse);
+    		Pneumatics.doubleSolenoid1.set(DoubleSolenoid.Value.kReverse);
     }
 
     // Make this return true when this Command no longer needs to run execute()
