@@ -43,7 +43,7 @@ public class breachUp extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Motors.setBreach(1);
+    	Motors.setBreach(-Motors.breachSpeed);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -53,7 +53,7 @@ public class breachUp extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	Motors.setBreach(0);;
+    	Motors.setBreach(0);
     }
 
     // Called when another command which requires one or more of the same

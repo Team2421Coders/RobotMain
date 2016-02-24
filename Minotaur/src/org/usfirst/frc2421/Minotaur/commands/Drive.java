@@ -66,7 +66,10 @@ public class Drive extends Command {
     	}else{
     		y = 0;
     	}
-    	
+    	if(x > y){
+    		x = (x * .2);
+    		y = (y * .2);
+    	}
 		SmartDashboard.putNumber("X Value:", x);
     	SmartDashboard.putNumber("Y Value:", y);
     	

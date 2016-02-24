@@ -16,6 +16,8 @@ import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.hal.PDPJNI;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
 import org.usfirst.frc2421.Minotaur.commands.*;
 import org.usfirst.frc2421.Minotaur.subsystems.*;
 
@@ -95,14 +97,14 @@ public class Robot extends IterativeRobot {
         // this line or comment it out.
         if (autonomousCommand != null) autonomousCommand.cancel();
         motors.initDefaultCommand();
-        
+        SmartDashboard.putNumber("Breach Speed", Motors.breachSpeed);
     }
 
     /**
      * This function is called periodically during operator control
      */
     public void teleopPeriodic() {
-        Scheduler.getInstance().run();
+        Motors.breachSpeed = SmartDashboard.getNumber("Breach Speed");
     }
 
     /**
